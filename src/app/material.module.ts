@@ -1,3 +1,6 @@
+/*
+  Manages material design imports
+ */
 import { NgModule } from '@angular/core';
 
 // some components from @angular/material need this

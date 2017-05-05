@@ -1,25 +1,32 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 
-import { MaterialModule } from './material.module'; // material design related imports
-import { AppComponent } from './app.component';
+import {MaterialModule} from './material.module';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 
-import 'hammerjs'; // gesture support for some @angular/material components
+// gesture support for some @angular/material components
+import 'hammerjs';
+
+import {MainViewComponent} from './main-view/main-view.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainViewComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
