@@ -6,11 +6,15 @@ Veterinary practice support software - web client part.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
-### Build
+### Development Build
 
-Run `ng build` to build the project.
-The build artifacts will be stored in the `dist/` directory.
-Use the `-prod` flag for a production build.
+Incremental build into `dist/` directory is started with `npm run dev`. 
+NPM doesn't start any server, [lara server](https://github.com/jkusniar/lara) 
+is required to run for app to be reachable.  
+
+### Production Build
+
+Run `ng build -prod`. Build artifacts can be found in `dist/` directory.
 
 # License
 
